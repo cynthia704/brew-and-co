@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew & Co. — Artisan Coffee, Crafted With Love</title>
+  <meta name="description" content="Brew & Co. is your neighborhood artisan coffee shop, serving specialty espresso, pour-overs, and freshly baked pastries in a warm, welcoming atmosphere." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="navbar transparent" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Brew & Co. Home">
+      <div class="nav-logo-icon">☕</div>
+      <span class="nav-logo-text">Brew &amp; Co.</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html"   class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="menu.html"    class="nav-link" data-page="menu.html">Menu</a></li>
+      <li><a href="about.html"   class="nav-link" data-page="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-link" data-page="contact.html">Contact</a></li>
+    </ul>
+    <a href="menu.html" class="btn btn-gold nav-cta">Order Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+  <ul role="list">
+    <li><a href="index.html"   class="nav-link">Home</a></li>
+    <li><a href="menu.html"    class="nav-link">Menu</a></li>
+    <li><a href="about.html"   class="nav-link">About</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+  <a href="menu.html" class="btn btn-gold" style="margin-top:8px;">Order Now</a>
+</div>
+
+<main>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero hero-transparent" id="home">
+    <div class="hero-bg">
+      <div class="hero-bg-parallax hero-bg-img" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+    </div>
+    <div class="container hero-content">
+      <span class="section-label hero-label animate-fade-up">Est. 2015 · Specialty Coffee</span>
+      <h1 class="hero-title animate-fade-up animate-delay-1">
+        Where Every Cup<br/>
+        Tells a <em>Story</em>
+      </h1>
+      <p class="hero-subtitle animate-fade-up animate-delay-2">
+        Handcrafted espresso drinks, single-origin pour-overs, and pastries<br class="desktop-br"/>
+        baked fresh every morning — served with soul.
+      </p>
+      <div class="hero-actions animate-fade-up animate-delay-3">
+        <a href="menu.html" class="btn btn-gold">Explore Our Menu</a>
+        <a href="about.html" class="btn btn-outline hero-btn-outline">Our Story</a>
+      </div>
+      <div class="hero-stats animate-fade-up animate-delay-4">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="12" data-suffix="+">0+</span>
+          <span class="hero-stat-label">Origins</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="40" data-suffix="+">0+</span>
+          <span class="hero-stat-label">Drinks</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="500" data-suffix="k+">0k+</span>
+          <span class="hero-stat-label">Happy Sips</span>
+        </div>
+      </div>
+    </div>
+    <a href="#featured" class="hero-scroll-cue" aria-label="Scroll down">
+      <span>↓</span>
+    </a>
+  </section>
+
+  <!-- ══ FEATURED STRIP ══ -->
+  <section class="strip" id="featured">
+    <div class="container strip-inner">
+      <div class="strip-item">
+        <span class="strip-icon">🌱</span>
+        <div>
+          <h4>Single Origin Beans</h4>
+          <p>Ethically sourced from 12+ countries</p>
+        </div>
+      </div>
+      <div class="strip-divider" aria-hidden="true"></div>
+      <div class="strip-item">
+        <span class="strip-icon">✋</span>
+        <div>
+          <h4>Hand-Crafted Daily</h4>
+          <p>Every drink made to your order</p>
+        </div>
+      </div>
+      <div class="strip-divider" aria-hidden="true"></div>
+      <div class="strip-item">
+        <span class="strip-icon">🥐</span>
+        <div>
+          <h4>Fresh Bakery</h4>
+          <p>Pastries baked in-house each morning</p>
+        </div>
+      </div>
+      <div class="strip-divider" aria-hidden="true"></div>
+      <div class="strip-item">
+        <span class="strip-icon">♻️</span>
+        <div>
+          <h4>Eco Commitment</h4>
+          <p>Compostable cups, zero-waste packaging</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SIGNATURE DRINKS ══ -->
+  <section class="section" id="menu-preview">
+    <div class="container">
+      <div class="text-center" style="max-width:600px;margin:0 auto;">
+        <span class="section-label">Signature Drinks</span>
+        <h2 class="section-title">Crafted to Perfection</h2>
+        <div class="divider center"></div>
+        <p class="section-subtitle" style="margin:0 auto 52px;">From velvety flat whites to bold single-origin cold brews, every sip is a careful balance of art and science.</p>
+      </div>
+
+      <div class="drinks-grid">
+
+        <article class="drink-card" data-animate data-delay="0">
+          <div class="drink-img-wrap">
+            <div class="drink-img" style="background: linear-gradient(135deg,#6B3A1F,#3D1C02);">
+              <span class="drink-emoji">☕</span>
+            </div>
+            <span class="drink-badge">Bestseller</span>
+          </div>
+          <div class="drink-body">
+            <span class="drink-origin">Ethiopia · Yirgacheffe</span>
+            <h3 class="drink-name">Velvet Cortado</h3>
+            <p class="drink-desc">Silky double ristretto and steamed whole milk — a perfect 1:1 ratio that highlights sweet floral notes.</p>
+            <div class="drink-footer">
+              <span class="drink-price">$5.50</span>
+              <a href="menu.html" class="btn btn-outline btn-sm">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="drink-card featured-card" data-animate data-delay="0.12">
+          <div class="drink-img-wrap">
+            <div class="drink-img drink-img-gold" style="background: linear-gradient(135deg,#B8845A,#8B5E3C);">
+              <span class="drink-emoji">🧊</span>
+            </div>
+            <span class="drink-badge badge-gold">Chef's Pick</span>
+          </div>
+          <div class="drink-body">
+            <span class="drink-origin">Colombia · Huila</span>
+            <h3 class="drink-name">Golden Cold Brew</h3>
+            <p class="drink-desc">18-hour cold-steeped Colombian beans topped with salted caramel cream — smooth, rich, and refreshing.</p>
+            <div class="drink-footer">
+              <span class="drink-price">$7.00</span>
+              <a href="menu.html" class="btn btn-gold btn-sm">Order</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="drink-card" data-animate data-delay="0.22">
+          <div class="drink-img-wrap">
+            <div class="drink-img" style="background: linear-gradient(135deg,#8B5E3C,#6B3A1F);">
+              <span class="drink-emoji">🌿</span>
+            </div>
+          </div>
+          <div class="drink-body">
+            <span class="drink-origin">Japan · Kyoto Style</span>
+            <h3 class="drink-name">Matcha Mist Latte</h3>
+            <p class="drink-desc">Ceremonial-grade matcha whisked with oat milk and a hint of vanilla — earthy, creamy, and calming.</p>
+            <div class="drink-footer">
+              <span class="drink-price">$6.00</span>
+              <a href="menu.html" class="btn btn-outline btn-sm">Order</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="text-center" style="margin-top:52px;">
+        <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT TEASER ══ -->
+  <section class="section about-teaser" id="about-teaser">
+    <div class="container about-teaser-grid">
+      <div class="about-teaser-img-wrap" data-animate>
+        <div class="about-teaser-img-main">
+          <span style="font-size:5rem;line-height:1;">☕</span>
+          <p style="font-family:var(--font-accent);font-style:italic;color:var(--cream-mid);margin-top:12px;">Crafted with love</p>
+        </div>
+        <div class="about-teaser-img-float">
+          <span style="font-size:2rem;">🫘</span>
+          <p style="font-size:0.82rem;color:var(--brown-pale);margin-top:6px;font-weight:500;">Freshly roasted weekly</p>
+        </div>
+      </div>
+      <div class="about-teaser-text" data-animate data-delay="0.15">
+        <span class="section-label">Our Story</span>
+        <h2 class="section-title">More Than Coffee.<br/>A Community.</h2>
+        <div class="divider"></div>
+        <p>Brew &amp; Co. was born in 2015 from a simple belief: that exceptional coffee, served in a warm and welcoming space, can turn strangers into neighbors and neighbors into friends.</p>
+        <p style="margin-top:16px;">We travel the world sourcing our beans directly from small-batch farmers who share our passion for quality and sustainability. Every bag, every brew, every cup is a promise.</p>
+        <div class="about-milestones">
+          <div class="milestone">
+            <span class="milestone-num" data-count="9" data-suffix="">0</span>
+            <span class="milestone-label">Years of Brewing</span>
+          </div>
+          <div class="milestone">
+            <span class="milestone-num" data-count="4" data-suffix="">0</span>
+            <span class="milestone-label">Locations</span>
+          </div>
+          <div class="milestone">
+            <span class="milestone-num" data-count="22" data-suffix="">0</span>
+            <span class="milestone-label">Team Members</span>
+          </div>
+        </div>
+        <a href="about.html" class="btn btn-primary" style="margin-top:36px;">Learn Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIALS ══ -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="text-center" style="max-width:540px;margin:0 auto 52px;">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial-card" data-animate>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Golden Cold Brew changed my entire outlook on iced coffee. I drive 20 minutes out of my way every single morning for it."</p>
+          <footer class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <strong>Amelia Chen</strong>
+              <span>Graphic Designer</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card testimonial-card-featured" data-animate data-delay="0.12">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Brew &amp; Co. isn't just a coffee shop — it's my office, my thinking space, my happy place. The staff remember your name and it feels like home."</p>
+          <footer class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <strong>Marcus Rivera</strong>
+              <span>Freelance Writer</span>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card" data-animate data-delay="0.22">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Best matcha latte in the city, and I've tried them all. The quality is just on another level. Plus the croissants? Unreal."</p>
+          <footer class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <strong>Sophie Laurent</strong>
+              <span>Food Blogger</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA BANNER ══ -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div class="cta-text" data-animate>
+        <span class="section-label" style="color:var(--gold-light);">Join the Community</span>
+        <h2 style="color:var(--cream-white);margin-bottom:14px;">Get 10% Off Your First Order</h2>
+        <p style="color:rgba(255,253,249,0.75);max-width:480px;">Sign up for our newsletter and be the first to hear about seasonal menus, barista tips, and exclusive member perks.</p>
+      </div>
+      <form class="cta-form" id="newsletter-form" data-animate data-delay="0.15" onsubmit="handleNewsletter(event)">
+        <div class="form-row">
+          <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required class="cta-input" />
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </div>
+        <p class="form-note">No spam, ever. Unsubscribe anytime. ☕</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand-name">Brew &amp; Co.</div>
+        <p class="footer-tagline">Crafted with love, served with soul.</p>
+        <p class="footer-desc">Your neighborhood specialty coffee shop since 2015. We believe exceptional coffee can build community, one cup at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Navigate</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Hours</h3>
+        <ul class="footer-links">
+          <li>Mon–Fri: 6:30am – 8pm</li>
+          <li>Saturday: 7:00am – 9pm</li>
+          <li>Sunday: 8:00am – 6pm</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-heading">Find Us</h3>
+        <div class="footer-contact-item"><span>📍</span><span>42 Maple Street, Brooklyn, NY 11201</span></div>
+        <div class="footer-contact-item"><span>📞</span><span>(718) 555-0192</span></div>
+        <div class="footer-contact-item"><span>✉️</span><span>hello@brewandco.com</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Brew &amp; Co. All rights reserved.</p>
+      <div class="footer-social" aria-label="Social links">
+        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+        <a href="#" class="social-link" aria-label="Facebook">👍</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  function handleNewsletter(e) {
+    e.preventDefault();
+    const email = document.getElementById('newsletter-email').value;
+    if (email) {
+      document.getElementById('newsletter-form').reset();
+      showToast('Welcome! Check your inbox for 10% off. ☕', '🎉');
+    }
+  }
+</script>
+</body>
+</html>
